@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#8b5cf6" />
+    <meta name="description" content="HashPet Privacy Policy." />
+    <title>HashPet — Privacy Policy</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <script defer src="../assets/config.js"></script>
+    <script defer src="../assets/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark" aria-hidden="true"><span>H</span></span>
+          <span>HashPet</span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="./" aria-current="page">Privacy</a>
+          <a href="../terms/">Terms</a>
+          <a href="../feedback/">Feedback</a>
+          <a data-repo-link href="#" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="container legal">
+      <h1>Privacy Policy</h1>
+      <p class="lede">
+        <strong>Effective date:</strong> 2026-01-07
+      </p>
+
+      <div class="callout">
+        <strong>Short version:</strong> HashPet processes browsing <em>root domains</em> (like <code>example.com</code>)
+        only when Domain Capture is ON, stores data locally in your browser, and does not transmit your browsing data to a
+        server.
+      </div>
+
+      <h2>1) What HashPet is</h2>
+      <p>
+        HashPet is a Chrome extension that turns your browsing into a virtual pet experience. HashPet does not require an
+        account and is designed to run on-device.
+      </p>
+
+      <h2>2) Data HashPet accesses</h2>
+      <h3>Browsing domains (root domains only)</h3>
+      <ul>
+        <li>
+          <strong>What:</strong> The root domain of pages you visit (e.g. <code>news.ycombinator.com</code> →
+          <code>ycombinator.com</code>).
+        </li>
+        <li><strong>When:</strong> Only when <strong>Domain Capture</strong> is enabled in HashPet settings.</li>
+        <li><strong>What it does not read:</strong> Page path/query strings, page content, form data, or keystrokes.</li>
+      </ul>
+
+      <h2>3) Data HashPet stores</h2>
+      <p>HashPet stores data locally in your browser via <code>chrome.storage.local</code>, including:</p>
+      <ul>
+        <li>Pet/game state (stats, evolution state, digestion queue, waste level, etc.).</li>
+        <li>Captured domains (root domains) required for gameplay features.</li>
+        <li>Preferences (Domain Capture toggle, notifications toggle, auto-digest toggle, etc.).</li>
+      </ul>
+
+      <h2>4) Data HashPet does not collect</h2>
+      <ul>
+        <li>HashPet does not transmit browsing domains or pet data to any developer-controlled server.</li>
+        <li>HashPet does not use the Chrome History API to read your history.</li>
+        <li>HashPet does not collect page contents, passwords, cookies, or messages.</li>
+      </ul>
+
+      <h2>5) Optional notifications</h2>
+      <p>
+        Notifications are optional and off by default. If you enable notifications, HashPet requests the
+        <code>notifications</code> permission at that time.
+      </p>
+
+      <h2>6) Feedback (Google Forms)</h2>
+      <p>
+        If you choose to send feedback, you may be redirected to a Google Form. Submissions to the Google Form are
+        handled by Google under their own policies, and may include any text you provide. Please avoid submitting
+        sensitive personal information.
+      </p>
+      <div class="buttons">
+        <a class="btn" data-feedback-link href="#" rel="noopener noreferrer" target="_blank">Open Feedback Form</a>
+      </div>
+
+      <h2>7) Your choices and controls</h2>
+      <ul>
+        <li>Turn Domain Capture ON/OFF in HashPet settings.</li>
+        <li>Delete all stored data via HashPet settings → “Delete All Data”.</li>
+        <li>Uninstalling the extension removes its local storage.</li>
+      </ul>
+
+      <h2>8) Changes to this policy</h2>
+      <p>
+        We may update this policy from time to time. We will update the effective date at the top of this page when we do.
+      </p>
+
+      <h2>9) Contact</h2>
+      <p>
+        For questions or requests, use the <a href="../feedback/">feedback form</a>.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          © <span data-year></span> HashPet.
+          <div class="muted">Contact: <a href="../feedback/">Feedback form</a></div>
+        </div>
+        <div>
+          <a href="../">Home</a> · <a href="../terms/">Terms</a> · <a href="../feedback/">Feedback</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

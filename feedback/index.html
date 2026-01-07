@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#8b5cf6" />
+    <meta name="description" content="Send feedback for HashPet." />
+    <title>HashPet — Feedback</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <script defer src="../assets/config.js"></script>
+    <script defer src="../assets/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark" aria-hidden="true"><span>H</span></span>
+          <span>HashPet</span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="../privacy/">Privacy</a>
+          <a href="../terms/">Terms</a>
+          <a href="./" aria-current="page">Feedback</a>
+          <a data-repo-link href="#" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="container legal">
+      <h1>Feedback</h1>
+      <p class="lede">Thanks for helping improve HashPet. Your feedback directly influences what ships next.</p>
+
+      <div class="callout">
+        <strong>Please don’t include sensitive information.</strong> If you’re reporting a bug, include steps to reproduce,
+        your Chrome version, and the extension version shown in <code>chrome://extensions</code>.
+      </div>
+
+      <div class="buttons">
+        <a class="btn primary" data-feedback-link href="#" rel="noopener noreferrer" target="_blank">Open Feedback Form</a>
+        <a class="btn" href="../privacy/">Privacy</a>
+        <a class="btn" href="../terms/">Terms</a>
+      </div>
+
+      <h2>What to include</h2>
+      <ul>
+        <li>What you expected to happen vs what happened.</li>
+        <li>Whether Domain Capture was ON or OFF.</li>
+        <li>If Auto-Digest was enabled (it can affect CPU usage).</li>
+      </ul>
+
+      <h2>Privacy note</h2>
+      <p>
+        The feedback form is hosted by Google. Your submission is subject to Google’s terms and privacy policy. HashPet does
+        not automatically transmit browsing data; only what you type into the form is shared.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          © <span data-year></span> HashPet.
+          <div class="muted">Contact: <a data-feedback-link href="#" rel="noopener noreferrer" target="_blank">Feedback form</a></div>
+        </div>
+        <div>
+          <a href="../">Home</a> · <a href="../privacy/">Privacy</a> · <a href="../terms/">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
