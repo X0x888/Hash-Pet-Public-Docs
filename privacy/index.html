@@ -32,13 +32,13 @@
     <main id="content" class="container legal">
       <h1>Privacy Policy</h1>
       <p class="lede">
-        <strong>Effective date:</strong> 2026-01-07
+        <strong>Effective date:</strong> 2026-09-20
       </p>
 
       <div class="callout">
-        <strong>Short version:</strong> HashPet processes browsing <em>root domains</em> (like <code>example.com</code>)
-        only when Domain Capture is ON, stores data locally in your browser, and does not transmit your browsing data to a
-        server.
+        <strong>Short version:</strong> HashPet reads the browsing <em>root host</em> (like <code>example.com</code>)
+        in memory only when Domain Capture is ON. The hostname is discarded. <code>chrome.storage.local</code> keeps
+        opaque tokens and SHA-256 hashes — never hostname strings. HashPet does not transmit your browsing data to a server.
       </div>
 
       <h2>1) What HashPet is</h2>
@@ -48,11 +48,11 @@
       </p>
 
       <h2>2) Data HashPet accesses</h2>
-      <h3>Browsing domains (root domains only)</h3>
+      <h3>Browsing hosts (read in memory)</h3>
       <ul>
         <li>
-          <strong>What:</strong> The root domain of pages you visit (e.g. <code>news.ycombinator.com</code> →
-          <code>ycombinator.com</code>).
+          <strong>What:</strong> The root host of pages you visit (e.g. <code>news.ycombinator.com</code> →
+          <code>ycombinator.com</code>), read in memory to build a meal, then discarded.
         </li>
         <li><strong>When:</strong> Only when <strong>Domain Capture</strong> is enabled in HashPet settings.</li>
         <li><strong>What it does not read:</strong> Page path/query strings, page content, form data, or keystrokes.</li>
@@ -62,13 +62,14 @@
       <p>HashPet stores data locally in your browser via <code>chrome.storage.local</code>, including:</p>
       <ul>
         <li>Pet/game state (stats, evolution state, digestion queue, waste level, etc.).</li>
-        <li>Captured domains (root domains) required for gameplay features.</li>
+        <li>Opaque meal tokens and SHA-256 hashes required for gameplay — not hostname strings.</li>
         <li>Preferences (Domain Capture toggle, notifications toggle, auto-digest toggle, etc.).</li>
       </ul>
 
       <h2>4) Data HashPet does not collect</h2>
       <ul>
-        <li>HashPet does not transmit browsing domains or pet data to any developer-controlled server.</li>
+        <li>Hostname strings in <code>chrome.storage.local</code> (meals are opaque tokens and SHA-256 hashes).</li>
+        <li>HashPet does not transmit browsing hosts or pet data to any developer-controlled server.</li>
         <li>HashPet does not use the Chrome History API to read your history.</li>
         <li>HashPet does not collect page contents, passwords, cookies, or messages.</li>
       </ul>
